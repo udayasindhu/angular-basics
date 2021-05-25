@@ -1,0 +1,13 @@
+<div class="container">
+    <label>
+        Name:
+        <input type="text" [formControl]="name">
+    </label>
+    <label>
+        Emp:
+        <input type="text" [(ngModel)]="eName" name="eName" required>
+    </label>
+    <p>Employer: {{eName | titlecase}}</p>
+    <button (click)="setValueInName()" class="btn btn-lg">Set Emp</button>
+    <button (click)="submit()" type="submit" class="btn btn-lg">Submit</button>
+</div>
